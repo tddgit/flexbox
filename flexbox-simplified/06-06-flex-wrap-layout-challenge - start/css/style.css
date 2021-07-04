@@ -24,8 +24,13 @@
 
 */
 
+
 .flex-layout {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 header,
@@ -40,9 +45,28 @@ footer {
 
 main {
   padding: 3rem;
+  flex-basis: 56rem;
+  flex-shrink: 1;
+  flex-grow: 2;
 }
 
 aside {
   font-size: 1.125rem;
   padding: 3rem;
+  flex-basis: 25rem;
+  flex-shrink: 1;
+  flex-grow: 1;
+  /*flex-shrink: 1;*/
+}
+
+.split {
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  flex-shrink: 1;
+
+  /* align-items: start;
+  justify-self: start;*/
 }

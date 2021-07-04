@@ -1,8 +1,8 @@
 .flex-container {
   display: flex;
+  /*  flex-direction: column;*/
 
-  flex-flow: column wrap;
-
+  flex-flow: wrap-reverse;
   width: 70%;
   height: 90vh;
   max-width: 60rem;
