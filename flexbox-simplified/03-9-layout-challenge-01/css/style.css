@@ -1,0 +1,89 @@
+/* ///////////////
+   YOUR TASK
+   ///////////////
+
+   1. At a viewport width of 32.5em
+      and bigger, .subscribe and 
+      .recent-episodes should go next to 
+      one another
+
+  2.  They should both be equal in width
+      until .subscribe reaches a width
+      of 25rem, at which point it no longer
+      grows anymore, and .recent-episodes
+      continues to grow to take up the 
+      rest of the available space
+*/
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex > * {
+  width: 100%;
+}
+
+.subscribe,
+.recent-episodes {
+  width: 100%;
+}
+
+@media (min-width: 32.5em) {
+  .flex-container {
+    flex-direction: row;
+  }
+
+  .subscribe {
+    width: 25rem;
+  }
+}
+
+
+
+/*
+.page-header {
+}*/
+
+/*.flow-content {}
+
+.page-title {}
+
+.page-description {}
+
+.text-primary {}
+
+.subscribe {}
+
+.card {}
+
+.bg-primary {}
+
+.text-white {}
+
+.card-cover-image {}
+
+.card-title {}
+
+.card-host {}
+
+.card-description {}
+
+.btn {}
+
+.recent-episodes {}*/
+
+.section-title {
+}
+
+.text-light {
+}
+
+.episode-card {
+}
+
+.episode-title {
+}
+
+.episode-meta {
+}
